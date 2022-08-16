@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Mock Art Gallery</title>
+</head>
+<body id="vantajs">
+    <nav>
+
+        <h3>The Future of Art</h3>
+        
+
+    </nav>
+    <div id="main">
+        <div id="carousel-wrapper">
+            <div id="menu">
+                <div id="current-option">
+                <span id="current-option-text1" data-previous-text="" data-next-text=""></span>
+                <a href="https://www.midjourney.com/"><span id="current-option-text2" data-previous-text="" data-next-text=""></span></a>
+                </div>
+                <button id="previous-option"></button>
+                <button id="next-option"></button>
+            
+            </div>
+            <div id="image"></div>
+        </div>
+    </div>
+    <a id="btn"  href="https://www.midjourney.com/">Start Exploring</a>
+    
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r123/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.birds.min.js"></script>
+<script>
+    // Vanta.js to create bird background
+    // Variables can be altered to change animation
+    VANTA.BIRDS({
+      el: "#vantajs",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 1100.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      quantity: 2.00,
+      color1: "#eaecf0",
+      color2: "#020303",
+      scaleMobile: 1.00,
+      backgroundAlpha: 0.00
+    })
+</script>
+<script src="js/index.js"></script>
+
+</html>
